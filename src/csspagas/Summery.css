@@ -1,0 +1,59 @@
+.case-payment
+{
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.288);
+    width:520px;
+    text-align: center;
+
+    
+
+}
+
+.main-display
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.summery-cart-1
+{
+    background-color: rgba(255, 255, 255, 0.459);
+    height: 150px;
+    width: 520px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    display: flex;
+   
+
+}
+
+.summery-image
+{
+    background-image: url("/src/Speakers/speaker2.png");
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+.summery-image-border
+{
+    border-right: 1px solid black;
+    padding-left: 5px;
+}
+
+.summery-bordar-to
+{
+    border-bottom: 1px solid black;
+}
+
+.summery-Address-user
+{
+    height: 200px;
+    width: 520px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    margin-right: 40px;
+
+}

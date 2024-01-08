@@ -1,0 +1,96 @@
+
+
+.display-flex-to
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+.heading-cart
+{
+    text-align: center;
+    border-bottom:  1px solid black;
+}
+
+.cart-cart
+{
+    background-color: rgba(255, 255, 255, 0.459);
+    height: 150px;
+    width: 450px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    display: flex;
+   
+}
+
+.cart-image
+{
+    background-image: url("/src/Speakers/speaker2.png");
+    height: 70px;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+   
+}
+
+.image-bordar
+{
+    border-right: 1px solid black;
+    padding-left: 5px;
+}
+
+.bordar-to
+{
+    border-bottom: 1px solid black;
+}
+
+.Free-dd
+{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+}
+
+/* ---------------------------------------------------cart 2 start --------------------------------------------- */
+
+
+.cart-2
+{
+    height: 180px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.541);
+    border: 1px solid rgba(0, 0, 0, 0.24);
+   
+}
+
+.Price-details
+{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.total-price
+{
+    border-bottom: 2px dotted black;
+}
+
+.total-bordar
+{
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+}
+
+.button-color
+{
+    padding-left: 50px;
+}

@@ -1,0 +1,498 @@
+
+#slaider-img-1{
+    background-image: url("/src/Speakers/slaider-1.jpeg");
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 300px;
+    height: 500px;
+    width: 500px;
+    
+}
+
+
+
+
+
+.div-n-1
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    
+}
+
+.washing-img-1
+{
+    background-image: url(/src/Speakers/wasing1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 150px;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+.washing-cart-1{
+    
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    border: solid 0.1px rgba(0, 0, 0, 0.096);
+    border-radius: 50px 50px 50px 50px;
+    height: 350px;
+    width: 250px;   
+   
+      
+}
+.washing-cart-1:hover
+{
+    transition: transform .6s;
+    transform: scale(1.09);
+    border: 1px solid rgba(255, 0, 191, 0.377);
+    border: 1px solid  rgba(255, 0, 191, 0.39); ;
+}
+
+
+.speaker-img-1
+{
+    background-image: url(/src/Speakers/speaker1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+
+
+.cooler-img-1
+{
+    background-image: url(/src/Cooler/cooler-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 170px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+}
+
+.fen-img-1
+{
+    background-image: url(/src/fen/fen-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 85px;
+    margin-left: 80px;
+    margin-top: 30px;
+    
+}
+.press-img-1
+{
+    background-image: url(/src/Press/press-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 120px;
+    margin-left:60px;
+    margin-top: 40px;
+    
+}
+.lcd-img-1
+{
+    background-image: url(/src/Lcd/lcd-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 45px;
+    
+}
+
+.headphone-img-1
+{
+    background-image: url(/src/headphone/h-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+
+/* ----------------------------item-2--------------------------------------------- */
+
+.washing-img-2
+{
+    background-image: url(/src/washing/washing9.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 80px;
+    margin-left:85px;
+    margin-top: 20px;
+    
+}
+
+.speaker-img-2
+{
+    background-image: url(/src/Speakers/speaker2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 60px;
+    height:100px;
+    width: 140px;
+    margin-top: 30px;
+      
+}
+
+.cooler-img-2
+{
+    background-image: url(/src/Cooler/cooler-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+    width: 180px;
+    margin-left: 40px;
+    margin-top: 10px;
+    
+}
+
+.fen-img-2
+{
+    background-image: url(/src/fen/fen-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 150px;
+    margin-left: 50px;
+    
+}
+
+.press-img-2
+{
+    background-image: url(/src/Press/press-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90px;
+    width: 120px;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+
+.lcd-img-2
+{
+    background-image: url(/src/Lcd/lcd-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 160px;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+.headphone-img-2
+{
+    background-image: url(/src/headphone/h-2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    width: 90px;
+    margin-left: 80px;
+    margin-top: 20px;
+    
+}
+
+
+/* ----------------------------------------------item-3-------------------------------------------------- */
+
+
+/*  */
+
+.washing-img-3
+{
+    background-image: url(/src/washing/washing3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 180px;
+    margin-left: 30px;
+    margin-top: 10px;
+    
+}
+
+.speaker-img-3
+{
+    background-image: url(/src/Speakers/speaker3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 130px;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+
+.cooler-img-3
+{
+    background-image: url(/src/Cooler/cooler-9.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    width: 140px;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+
+.fen-img-3
+{
+    background-image: url(/src/fen/fen-3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    margin-left: 80px;
+    margin-top: 20px;
+    
+}
+.press-img-3
+{
+    background-image: url(/src/Press/press-3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 130px;
+    margin-left: 50px;
+    margin-top: 40px;
+    
+}
+
+.headphone-img-3
+{
+    background-image: url(/src/headphone/h-3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+}
+
+.lcd-img-3
+{
+    background-image: url(/src/Lcd/lcd-3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    margin-left: 55px;
+    margin-top: 10px;
+    
+}
+
+/* ----------------------------------------------item------------------------------------------------------------- */
+
+
+.washing-img-4
+{
+    background-image: url(/src/washing/washing4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+}
+
+.speaker-img-4
+{
+    background-image: url(/src/Speakers/speaker4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    margin-left: 70px;
+    margin-top: 10px;
+    
+}
+
+.cooler-img-4
+{
+    background-image: url(/src/Cooler/cooler-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 100px;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+
+.fen-img-4
+{
+    background-image: url(/src/fen/fen-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    margin-left: 70px;
+    margin-top: 40px;
+    
+}
+
+.press-img-4
+{
+    background-image: url(/src/Press/press-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    margin-left: 45px;
+    margin-top: 10px;
+    
+}
+
+.lcd-img-4
+{
+    background-image: url(/src/Lcd/lcd-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+}
+
+.headphone-img-4
+{
+    background-image: url(/src/headphone/h-4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    margin-left: 70px;
+    margin-top: 20px;
+    
+}
+
+/* -------------------------------------item-5----------------------------------------------------- */
+
+.washing-img-5
+{
+    background-image: url(/src/washing/washing7.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    margin-left: 60px;
+    margin-top: 10px
+    
+}
+
+.speaker-img-5
+{
+    background-image: url(/src/Speakers/speaker5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    margin-left:55px;
+    margin-top: 10px;
+    
+    
+}
+
+.cooler-img-5
+{
+    background-image: url(/src/Cooler/cooler-5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+}
+
+.fen-img-5
+{
+    background-image: url(/src/fen/fen-5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    width: 60px;
+    margin-left: 90px;
+    margin-top: 20px;  
+    
+}
+
+.press-img-5
+{
+    background-image: url(/src/Press/press-5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    margin-left: 60px;
+    margin-top: 10px;
+    
+}
+
+.headphone-img-5
+{
+    background-image: url(/src/headphone/h-5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    margin-left: 60px;
+    margin-top: 10px;
+    
+}
+
+.lcd-img-5
+{
+    background-image: url(/src/Lcd/lcd-5.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width: 130px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+    
+/* ------------------------------item 6------------------------------------- */
+
+
+.washing-img-6
+{
+    background-image: url(/src/washing/washing9.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 140px;
+    width: 85px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+ 
+/* ---------------------------------------------------------------------------------------------------------------- */
+
+.t-d-n
+{
+   text-decoration: none;
+}
+
+.p-discription-1
+{
+    color:black;
+    padding-top: 40px;
+    padding-left: 10px;
+}

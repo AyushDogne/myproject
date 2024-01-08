@@ -1,0 +1,50 @@
+.Address
+{
+   text-align: center;
+   border-bottom: 1px solid black;
+}
+
+.select-d-a
+{
+    padding-top: 20px;
+    padding-left: 300px;
+}
+
+.main-Address-div
+{
+    display: flex;
+    justify-content:center;
+    padding-top: 5px;
+
+}
+
+
+.Address-user
+{
+    height: 200px;
+    width: 520px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    margin-right: 40px;
+}
+
+.border-said
+{
+   
+    padding-top: 10px;
+    padding-left: 20px;
+    border-bottom: 2px dotted black ;
+}
+
+.border-cover
+{
+    padding-left: 100px;
+    padding-top: 30px;
+    
+}
+
+.button-to-address
+{
+    padding-left: 150px;
+    padding-top: 20px;
+}

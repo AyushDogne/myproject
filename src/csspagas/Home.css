@@ -1,17 +1,18 @@
 
-#slaider-img-1{
-    background-image: url("/src/Speakers/slaider-1.jpeg");
- 
-    background-size: cover;
+.slaider-1{
+
+    margin-top: 50px;
+    margin-left: 130px;
+    height: 420px;
+    width: 1100px;
     background-repeat: no-repeat;
-    margin-top: 300px;
-    height: 500px;
-    width: 500px;
+    background-size: cover;
     
-}
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: rgb(1, 1, 1) 0px 6px 8px;
 
 
-
+  }
 
 
 .div-n-1

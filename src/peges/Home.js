@@ -1,6 +1,7 @@
 import React from 'react'
 import "../csspagas/Home.css"
 import { NavLink } from 'react-router-dom'
+import Slaider from './Slaider'
 
 
 
@@ -10,11 +11,8 @@ const Home = () => {
 
 
     <div className="main-div-home">
-
-   
-
-
-
+      
+      <Slaider/>
 
       <div className='div-n-1'>
 

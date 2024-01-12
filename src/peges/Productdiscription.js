@@ -20,6 +20,7 @@ const Productdiscription = (props) =>
                 image : props.image,
                 prise : props.price,
              delivery : props.delivery
+             
                 },
             }}
         

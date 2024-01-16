@@ -6,13 +6,14 @@ const Product = (props) =>
     // to="/productdescription" state={{title:props.title}} 
     return <div>
         <NavLink to="/productdescription" state={{
-            from: {
+            from: 
+            {
                 title : props.title,
                 image : props.image,
-                prise : props.price,
-             delivery : props.delivery
-                },
-            }}
+                price : props.price,
+                delivery : props.delivery
+            },
+        }}
         className='t-d-n'> <div className='washing-cart-1'><div className={props.image}></div>
 
             <div className='p-discription-1'><p style={{fontSize:"15px"}}>{props.title}</p>

@@ -2,25 +2,49 @@
 import "../csspagas/Home.css"
 import Slaider from './Slaider'
 import Product from './Product'
+import { useState } from "react"
 
 
 
 const Home = () => {
+  const [products, setProducts] = useState([
+    {
+      title: "Havells-Lloyd 7.0 kg Fully Automatic Front Load Washing Machine (GLWMF70WC1 White)",
+      image: "washing-img-1",
+      price: "8900",
+      delivery: "Free delivery"
+    },
+    {
+      title: "Zebronics Zeb-Action Portable 10W BT Speaker with TWS Function, USB,mSD, AUX, FM, Mic & Fabric Finish(Red)",
+      image: "press-img-1",
+      price: "543",
+      delivery: "Delivery charge : 80"
+    },
+    {
+      title: "Casa Copenhagen, 27Ltr - RS27.10 Air Punch Collection Personal Air Cooler with Anti Bacterial Honeycomb Pads,",
+      image: "cooler-img-1",
+      price: "6300",
+      delivery:"Free delivery"
+    }
+  ])
 
   return (
 
     <div className="main-div-home">
-
       <Slaider />
-
       <div className='div-n-1'>
-
-        <Product title="Havells-Lloyd 7.0 kg Fully Automatic Front Load Washing Machine (GLWMF70WC1 White)" image="washing-img-1" price="8900" delivery="Free delivery" id="img=1"/>
-        <Product title="Zebronics Zeb-Action Portable 10W BT Speaker with TWS Function, USB,mSD, AUX, FM, Mic & Fabric Finish(Red)" image="speaker-img-1" price="543" delivery="Delivery charge : 80" />
-        <Product title="Casa Copenhagen, 27Ltr - RS27.10 Air Punch Collection Personal Air Cooler with Anti Bacterial Honeycomb Pads," image="cooler-img-1" price="6300" delivery="Free delivery" />
-
+        {
+          products.map(productTemp =>
+            {
+              return <Product 
+              title={productTemp.title} 
+              image={productTemp.image} 
+              price={productTemp.price}
+              delivery={productTemp.delivery}
+              />
+            })
+        }
       </div>
-
       <div className='div-n-1'>
 
         <Product title="AmazonBasics High Speed 55 Watt Wall Fan for Cooling with Automatic Oscillation (400 MM), White" image="fen-img-1" price="873" delivery="Delivery charge : 63" />

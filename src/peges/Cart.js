@@ -4,8 +4,6 @@ import { NavLink, useLocation } from 'react-router-dom'
 
 
 const Cart = (props) => {
-
-
   let location = useLocation();
 
   console.log(location)

@@ -27,15 +27,7 @@
 
 }
 
-.summery-image
-{
-    background-image: url("/src/Speakers/speaker2.png");
-    height: 70px;
-    width: 70px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 10px;
-}
+
 
 .summery-image-border
 {

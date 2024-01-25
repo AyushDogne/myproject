@@ -10,11 +10,11 @@ const Productdiscription = () =>
   return (
     <div className='main-div-p-d'>
       <div>
-        <div id='ppp-1'> 
-          <div className={location.state.from.image}>
-          </div>
-        </div>
-        <NavLink to="/Cart" state={{ 
+     
+          <div><p className={location.state.from.image}  id="hello"/></div>
+        
+        
+        <NavLink  to="/Cart" state={{ 
           from: 
             {
               title : location.state.from.title,

@@ -7,45 +7,6 @@
 }
 
 
-
-/* .img-p-d
-{
-    background-image: url("/src/Speakers/speaker1.jpg");
-    background-color: red;
- 
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px 10px 10px 10px ;
-    border:  1px solid rgba(0, 0, 0, 0.192);
-
-
-} */
-
-
-/* #ppp-1
-{
-    background-color: black;
-    height: 450px;
-    width: 450px;
-    
-} */
-
-#ppp
-{
-   
-    height: 200px;
-    width: 270px;
-    border-radius: 10px 10px 10px 10px;
-    border:  1px solid rgba(35, 146, 173, 0.651);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 10px;
-
-
-
-
-}
-
 .Add-to-cart
 {
     margin-top: 10px;

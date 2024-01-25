@@ -25,14 +25,31 @@ const Home = () => {
       image: "cooler-img-1",
       price: "6300",
       delivery:"Free delivery"
-    }
+    },
+
+  //   {
+  //     title:"AmazonBasics High Speed 55 Watt Wall Fan for Cooling with Automatic Oscillation (400 MM), White",
+  //     image:"fen-img-1",
+  //     price:"873",
+  //  delivery:"Delivery charge : 63"
+
+  //   }
   ])
+
+
+
+       
+
+
+
+
+
 
   return (
 
     <div className="main-div-home">
       <Slaider />
-      <div className='div-n-1'>
+      <div className=' div-n-1'>
         {
           products.map(productTemp =>
             {
@@ -48,7 +65,7 @@ const Home = () => {
       <div className='div-n-1'>
 
         <Product title="AmazonBasics High Speed 55 Watt Wall Fan for Cooling with Automatic Oscillation (400 MM), White" image="fen-img-1" price="873" delivery="Delivery charge : 63" />
-        <Product title="Wipro Vesta 1200 Watt GD203 Heavyweight Automatic Dry Iron| Quick Heat Up| Anti bacterial German Weilburger Double Coated Black Soleplate |2 Years Warranty" image="press-img-1" price="640" delivery="free delivery" />
+        <Product title="Wipro Vesta 1200 Watt GD203 Heavyweight Automatic Dry Iron| Quick Heat Up| Anti bacterial German Weilburger Double Coated Black Soleplate |2 Years Warranty" image="speaker-img-1" price="640" delivery="free delivery" />
         <Product title="BenQ GW2780 27 inch (68 cm) 1920 x 1080 Pixels IPS Full HD Ultra-Slim Bezel Monitor- Eye Care, Anti-Glare, Brightness Intelligence, Speakers, Low Blue Light" image="lcd-img-1" price="3290" delivery="free delivery" />
 
       </div>

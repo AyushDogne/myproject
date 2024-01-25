@@ -4,7 +4,9 @@ import { NavLink } from "react-router-dom";
 const Product = (props) =>
 {
     // to="/productdescription" state={{title:props.title}} 
-    return <div>
+    return <div className="md">
+
+  
         <NavLink to="/productdescription" state={{
             from: 
             {
@@ -14,7 +16,9 @@ const Product = (props) =>
                 delivery : props.delivery
             },
         }}
-        className='t-d-n'> <div className='washing-cart-1'><div className={props.image}></div>
+           className='t-d-n'>
+            
+          <div className='washing-cart-1'><div className={props.image}></div>
 
             <div className='p-discription-1'><p style={{fontSize:"15px"}}>{props.title}</p>
           
@@ -26,6 +30,7 @@ const Product = (props) =>
 
             </div></NavLink>
     </div>
+   
 }
 
 export default Product;

@@ -18,7 +18,11 @@ const Product = (props) =>
         }}
            className='t-d-n'>
             
-          <div className='washing-cart-1'><div className={props.image}></div>
+          <div className='washing-cart-1'>
+            <div >
+            {/* className={props.image} */}
+                <img src={require(props.image)}></img>
+            </div>
 
             <div className='p-discription-1'><p style={{fontSize:"15px"}}>{props.title}</p>
           

@@ -10,7 +10,8 @@ const Home = () => {
   const [products, setProducts] = useState([
     {
       title: "Havells-Lloyd 7.0 kg Fully Automatic Front Load Washing Machine (GLWMF70WC1 White)",
-      image: "washing-img-1",
+      // image: "washing-img-1",
+      image: '../washing/washing2.jpeg',
       price: "8900",
       delivery: "Free delivery"
     },

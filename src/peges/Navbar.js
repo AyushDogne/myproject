@@ -96,7 +96,7 @@ const Navbar = () => {
 
       <nav className="nav">
         <div className="container">
-          <div className="d_e"><h3>Dogne-Electronics</h3></div>
+          <div className="d_e"><h3>𝔾𝕝𝕠𝕨 𝕄𝕒𝕣𝕥</h3></div>
 
           <div className="input_box">
             <form action="">

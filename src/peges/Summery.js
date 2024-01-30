@@ -7,7 +7,12 @@ const Summery = () => {
   let location = useLocation();
 
   return (
+    <div>
+    <div className='summery'><h1>Summery</h1></div>
+    <div className='line'></div>
+
     <div className='main-display'>
+
       <div>
         <div className='summery-cart-1'>
 
@@ -87,7 +92,7 @@ const Summery = () => {
 </div>
 
       </div>
-
+</div>
     </div>
   )
 }

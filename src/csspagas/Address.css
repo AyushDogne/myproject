@@ -42,9 +42,28 @@
     padding-top: 30px;
     
 }
-
+.order-11
+{
+    display:flex;
+    justify-content: space-around;
+    border-bottom: 2px dotted black;
+    padding-top: 20px;
+}
+.cart-22
+{
+    height: 200px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.541);
+    border: 1px solid rgba(0, 0, 0, 0.24);
+}
 .button-to-address
 {
     padding-left: 150px;
     padding-top: 20px;
+}
+.last-cart
+{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
 }

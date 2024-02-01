@@ -11,19 +11,21 @@ const Home = () => {
     {
       title: "Havells-Lloyd 7.0 kg Fully Automatic Front Load Washing Machine (GLWMF70WC1 White)",
       // image: "washing-img-1",
-      image: '../washing/washing2.jpeg',
+      image: 'washing/washing2.jpeg',
       price: "8900",
       delivery: "Free delivery"
     },
     {
       title: "Zebronics Zeb-Action Portable 10W BT Speaker with TWS Function, USB,mSD, AUX, FM, Mic & Fabric Finish(Red)",
-      image: "press-img-1",
+      image: "washing/washing2.jpeg",
+      //image: "press-img-1",
       price: "543",
       delivery: "Delivery charge : 80"
     },
     {
       title: "Casa Copenhagen, 27Ltr - RS27.10 Air Punch Collection Personal Air Cooler with Anti Bacterial Honeycomb Pads,",
-      image: "cooler-img-1",
+      image: "washing/washing2.jpeg",
+      //image: "cooler-img-1",
       price: "6300",
       delivery:"Free delivery"
     },
@@ -63,7 +65,7 @@ const Home = () => {
             })
         }
       </div>
-      <div className='div-n-1'>
+      {/* <div className='div-n-1'>
 
         <Product title="AmazonBasics High Speed 55 Watt Wall Fan for Cooling with Automatic Oscillation (400 MM), White" image="fen-img-1" price="873" delivery="Delivery charge : 63" />
         <Product title="Wipro Vesta 1200 Watt GD203 Heavyweight Automatic Dry Iron| Quick Heat Up| Anti bacterial German Weilburger Double Coated Black Soleplate |2 Years Warranty" image="speaker-img-1" price="640" delivery="free delivery" />
@@ -134,7 +136,7 @@ const Home = () => {
         <Product title="Voltas beko, A Tata Product 7.2 Kg Semi-Automatic Top Load Washing Machine, (WTT72, Burgundy, 2023 Model, Fast Dry)" image='washing-img-5' price="9400" delivery="Delivery charge :150" />
         <Product title="pTron Fusion Party v2 40W Karaoke Bluetooth Party Speaker with 3M Wired Microphone, Dual Drivers, RGB Lights, USB/SD Card Playback, Auto TWS Function " image='speaker-img-5' price="900" delivery="Delivery charge :75" />
 
-      </div>
+      </div> */}
 
 
     </div>

@@ -11,7 +11,10 @@ const Productdiscription = () =>
     <div className='main-div-p-d'>
       <div>
      
-          <div><p className={location.state.from.image}  id="hello"/></div>
+          {/* <div><p className={location.state.from.image}  id="hello"/></div> */}
+          <div>
+            <img src={require("../"+location.state.from.image)}/>
+          </div>
         
         
         <NavLink  to="/Cart" state={{ 

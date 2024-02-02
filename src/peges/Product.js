@@ -19,8 +19,9 @@ const Product = (props) =>
            className='t-d-n'>
             
           <div className='washing-cart-1'>
-            <div className={props.image}>
-                {/* <img src={require(props.image)}></img> */}
+            <div >
+            {/* className={props.image} */}
+                <img src={require("../"+props.image)}></img>
             </div>
 
             <div className='p-discription-1'><p style={{fontSize:"15px"}}>{props.title}</p>
@@ -30,7 +31,7 @@ const Product = (props) =>
             </svg> <span>{props.price}</span></h4>
             <p>{props.delivery}</p>
             </div>
-
+</div>
             </div></NavLink>
     </div>
    

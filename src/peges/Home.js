@@ -10,8 +10,10 @@ const Home = () => {
   const [products, setProducts] = useState([
     {
       title: "Havells-Lloyd 7.0 kg Fully Automatic Front Load Washing Machine (GLWMF70WC1 White)",
-      image: "washing-img-1",
+      //image: "washing-img-1",
       // image: '../washing/washing2.jpeg',
+      // image: "washing-img-1",
+      image: 'washing/washing2.jpeg',
       price: "8900",
       delivery: "Free delivery"
     },
@@ -25,7 +27,8 @@ const Home = () => {
 
     {
       title: "Casa Copenhagen, 27Ltr - RS27.10 Air Punch Collection Personal Air Cooler with Anti Bacterial Honeycomb Pads,",
-      image: "cooler-img-1",
+      image: "washing/washing2.jpeg",
+      //image: "cooler-img-1",
       price: "6300",
       delivery: "Free delivery"
     },

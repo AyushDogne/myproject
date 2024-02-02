@@ -18,7 +18,7 @@ const Cart = () => {
         <div className='cart-cart'>
 
           <div className='cart-image'>
-            <p className={location.state.from.image+"-cart"} ></p>
+            <p className={location.state.from.image}  id='cart-image'></p>
           </div>
 
           <div className='image-bordar'></div>

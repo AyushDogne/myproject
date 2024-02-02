@@ -47,19 +47,13 @@
     padding-left: 95px;
 }
 
+.cart-image
+{
+    padding-right: 80px;
+
+}
 /* ---------------------------------------------------cart 2 start --------------------------------------------- */
 
-.washing-img-1-cart
-{
-    background-image: url(/src/Speakers/wasing1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 330px;
-    width: 350px;
-    margin-left: 20px;
-    margin-top: 10px;
-    
-}
 
 .cart-2
 {

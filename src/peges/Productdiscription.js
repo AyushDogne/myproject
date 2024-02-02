@@ -10,10 +10,6 @@ const Productdiscription = () =>
   return (
     <div className='main-div-p-d'>
       <div>
-     
-          <div><p className={location.state.from.image}  id="hello"/></div>
-        
-        
         <NavLink  to="/Cart" state={{ 
           from: 
             {
@@ -24,6 +20,8 @@ const Productdiscription = () =>
             },
           }}
         >
+           <div className={location.state.from.image} id='hello'/>
+
               <div className='Add-to-cart'>
                 <button className='btn btn-outline-success'>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">

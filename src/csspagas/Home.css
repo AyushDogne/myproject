@@ -11,7 +11,6 @@
     width: 1100px;
     background-repeat: no-repeat;
     background-size: cover;
-    
     border-radius: 20px 20px 20px 20px;
     box-shadow: rgb(1, 1, 1) 0px 6px 8px;
 
@@ -22,9 +21,12 @@
 .div-n-1
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin-top: 50px;
-    
+    display: grid;
+    grid-template-columns:200px 200px 200px 200px;
+    grid-template-rows:400px 400px 400px;  
+    row-gap: 50px;
 }
 
 .washing-img-1
@@ -40,7 +42,7 @@
 }
 .washing-cart-1{
     
-    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    box-shadow: rgba(0, 0, 0, 0.555) 0px 2px 4px;
     border: solid 0.1px rgba(0, 0, 0, 0.096);
     border-radius: 50px 50px 50px 50px;
     height: 400px;
@@ -52,8 +54,7 @@
 {
     transition: transform .6s;
     transform: scale(1.09);
-    border: 1px solid rgba(255, 0, 191, 0.377);
-    border: 1px solid  rgba(255, 0, 191, 0.39); ;
+    border: 1px solid rgb(255, 0, 191);
 }
 
 
@@ -64,7 +65,7 @@
     background-size: cover;
     height: 130px;
     width: 150px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 10px;
 }
 
@@ -98,8 +99,8 @@
     background-image: url(/src/Press/press-1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100px;
-    width: 120px;
+    height: 130px;
+    width: 140px;
     margin-left:60px;
     margin-top: 40px;
     
@@ -109,8 +110,8 @@
     background-image: url(/src/Lcd/lcd-1.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100px;
-    width: 150px;
+    height: 120px;
+    width: 180px;
     margin-top: 40px;
     margin-left: 45px;
     
@@ -249,6 +250,8 @@
     background-size: cover;
     height: 130px;
     width: 150px;
+    margin-top: 10px;
+    margin-left: 50px;
     
 }
 
@@ -259,7 +262,7 @@
     background-size: cover;
     height: 120px;
     width: 120px;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-top: 20px;
     
 }
@@ -499,3 +502,4 @@
     padding-top: 40px;
     padding-left: 10px;
 }
+

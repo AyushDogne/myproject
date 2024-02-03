@@ -45,7 +45,12 @@ const Payment = () => {
             </form>
             </div>
             <div>
-              <h5>Case on Delivery</h5>
+              <h5   state={{ 
+          from:{
+            payment : location.state.from.payment,
+
+          }
+          }}>Case on Delivery</h5>
             </div>
           </div>
 

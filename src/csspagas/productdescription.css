@@ -60,7 +60,6 @@
     border-radius: 0px 50px 0px 50px;
     margin-top: 20px;
     background-color: white;
-    
 }
 
 .blutooth-details-2
@@ -70,13 +69,16 @@
     color: rgba(0, 0, 0, 0.596);
 }
 
-.p-d{
+.p-d
+{
+
     padding-top: 10px;
     padding-left: 10px;
 }
+.product-image
+{
+    height: 400px;
+    width: 500px;
+    margin-top: 20px;
 
-#hello{
-    height: 350px;
-    width: 350px;
-    background-color: red;
 }

@@ -24,8 +24,10 @@
     height: 200px;
     width: 520px;
     background-color: rgba(255, 255, 255, 0.849);
-    border: 1px solid rgba(0, 0, 0, 0.281);
+    border: 1px solid rgba(0, 0, 0, 0.164);
     margin-right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+
 }
 
 .border-said
@@ -54,7 +56,9 @@
     height: 200px;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.541);
-    border: 1px solid rgba(0, 0, 0, 0.24);
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+
+    border: 1px solid rgba(0, 0, 0, 0.137);
 }
 .button-to-address
 {

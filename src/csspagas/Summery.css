@@ -1,0 +1,87 @@
+.summery{
+    margin-top: 20px;
+    margin-left: 600px;
+    
+}
+.line
+{
+    border-bottom: 1px solid black;
+
+}
+
+
+.case-payment
+{
+    border: 1px solid rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.288);
+    width:700px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+
+}
+
+.main-display
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.summery-cart-1
+{
+    background-color: rgb(255, 255, 255);
+    height: 170px;
+    width: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+
+}
+
+.summery-title
+{
+   display: flex;
+   justify-content: space-between;
+}
+
+.summery-image
+{
+    padding-top: 0%;
+    height: 170px;
+    object-fit: contain;
+
+}
+
+
+.summery-image-border
+{
+    border-right: 2px solid rgba(0, 0, 0, 0.24);
+ 
+}
+
+.summery-bordar-to
+{
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding-top: 30px;
+}
+
+.summery-Address-user
+{
+    height: 200px;
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.849);
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    margin-right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+
+
+}
+
+.summery-payment
+{
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    width: 400px;
+
+}

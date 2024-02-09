@@ -1,0 +1,104 @@
+
+
+.display-flex-to
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+
+.heading-cart
+{
+    text-align: center;
+    border-bottom:  1px solid black;
+}
+
+.cart-cart
+{
+    background-color: rgba(255, 255, 255, 0.459);
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+    height:230px;
+    width: 700px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    display: flex;
+   
+}
+.cart-image
+{
+    height: 200px;
+    width: 300px;
+    object-fit: contain;
+}
+
+.image-bordar
+{
+    border-right: 1px solid rgba(0, 0, 0, 0.445);
+    padding-left: 10px;
+}
+
+.bordar-to
+{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.479);
+    display: flex;
+    padding-top:50px;
+    justify-content: space-around;
+   
+}
+
+.Free-dd
+{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+    padding-left: 95px;
+}
+
+/* ---------------------------------------------------cart 2 start --------------------------------------------- */
+
+
+.cart-2
+{
+    height: 230px;
+    width: 270px;
+    background-color: rgba(255, 255, 255, 0.541);
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+
+   
+}
+
+.Price-details
+{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.total-price
+{
+    border-bottom: 2px dotted black;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.total-bordar
+{
+    padding-top: 15px;
+}
+.order-t
+{
+    display: flex;
+    justify-content: space-around;
+}
+.button-color
+{
+    padding-left: 78px;
+    padding-top: 30px;
+}
+ 
+.cart-title
+{
+    padding-top: 10px;
+}

@@ -1,0 +1,157 @@
+
+.main-cart
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.select-p-f-s
+{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.payment-cart
+{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    
+
+}
+
+.payment-cart-2
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    margin-left: 20px;
+
+}
+
+.phonepay-image
+{
+    background-image: url("/src/Speakers/phone-pay.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 10px;  
+    
+}
+
+.phonepe-text
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    
+}
+
+.phonepe-img-text
+{
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.329);
+    padding-top: 5px;
+}
+
+.phonepe-img-text:hover
+{
+
+    background-color: rgba(0, 0, 0, 0.425);
+
+}
+
+.google-image
+{
+    background-image: url("/src/Speakers/google-1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 10px;  
+    
+}
+
+.paytym-image
+{
+    background-image: url("/src/Speakers/paytym.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40px;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 10px;  
+    
+}
+
+.Case-on-d
+{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.301);
+    display: flex;
+    padding-left: 20px;
+    padding-top: 10px;
+    
+}
+
+.Case-on-d:hover
+{
+    background-color: rgba(0, 0, 0, 0.425);
+
+}
+
+.pay-full
+{
+    background-color: rgba(0, 0, 255, 0.322);
+    height: 95px;
+    width: 500px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.price-detail
+{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+}
+
+.total-p-d
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-size: large;
+    border-bottom: 2px dotted;
+
+}
+
+.last-order-total
+{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select-payment-button
+{
+  
+  
+    background-color: rgba(0, 0, 0, 0.425);
+    height:145px;
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+    
+
+
+}
+
+.button-1
+{
+    text-align: center;
+    padding-top: 50px;
+}

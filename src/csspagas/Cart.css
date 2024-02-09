@@ -27,7 +27,8 @@
 .cart-image
 {
     height: 200px;
-    width: 250px;
+    width: 300px;
+    object-fit: contain;
 }
 
 .image-bordar
@@ -59,7 +60,7 @@
 .cart-2
 {
     height: 230px;
-    width: 250px;
+    width: 270px;
     background-color: rgba(255, 255, 255, 0.541);
     border: 1px solid rgba(0, 0, 0, 0.089);
     box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;

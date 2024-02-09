@@ -1,43 +1,3 @@
-// import React, {useState} from 'react'
-// import "./Navbar.css";
-// import { Outlet, Link, NavLink } from "react-router-dom";
-
-// // navbar----------------------------------------
-
-
-// const Navbar = () => {
-//   const [menuOpen,setMenuOpen]=useState(false)
-//   return (
-// <div>
-//       <nav>  
-//          <Link to="/" className='Navbar_1'>Ayush</Link>
-//          <div className='navspan' onClick={()=>{
-//           setMenuOpen(!menuOpen);
-//          }}>
-//           <span></span>
-//           <span></span>
-//           <span></span>
-//          </div>
-//         <ul className={menuOpen ? "open" : ""} type='none'>
-//           <li><NavLink to="/" exact className='Navboth'>Home</NavLink></li>
-//           <li><NavLink to="/Categories" exact className='Navboth'>Categories</NavLink></li>
-//           <li><NavLink to="/Signup" exact className='Navboth'>Signup</NavLink></li>
-//           <li><NavLink to="/Login" exact className='Navboth'>Login</NavLink></li>
-//         </ul>
-
-//       </nav>
-//          <Outlet />
-// </div>
-//   )
-//   }
-
-// export default Navbar
-
-
-
-//---------------------------------------------------------------------------------------
-
-
 
 import "./Navbar.css";
 import { Outlet, NavLink } from "react-router-dom";
@@ -86,7 +46,7 @@ const Navbar = () => {
 
           <ul className='active' >
             <li><NavLink to="/" exact className='active'>Home</NavLink></li>
-            <li><NavLink to="/Categories" className='active'>Categories</NavLink></li>
+            {/* <li><NavLink to="/Categories" className='active'>Categories</NavLink></li> */}
             <li><NavLink to="/Signup" className='active'>Signup</NavLink></li>
             <li><NavLink to="/Login" className='active'>Login</NavLink></li>
           </ul>
@@ -127,7 +87,6 @@ const Navbar = () => {
                       {image ? (
 
                         <div><img src={URL.createObjectURL(image)} className="user-pic" /></div>
-
                       ) :
                         (
                           <div className="befor-image"></div>
@@ -154,19 +113,14 @@ const Navbar = () => {
                       </div><br/>
 
                       <div className="p-input-2">
-
                       <div><input type="text" placeholder="Enter your state" /></div><br/>
                       <div><input type="text" placeholder="Enter your city" /></div><br />
                       <div><input type="text" placeholder="Enter your pic-code" /></div><br />
                       <div><input type="text" placeholder="Enter your parmanent Address" /></div><br/>
 
                      <p style={{paddingLeft:"150px"}}><button className="btn btn-outline-success">Seve</button></p> 
-
-
-
                     </div>
                   </form>
-
                 </div>
               </li>
             </ul>
@@ -174,22 +128,10 @@ const Navbar = () => {
             <NavLink to="/Cart" className='cart_flex'> <i className="bi bi-cart4"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
               <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
             </svg></i>  </NavLink>
-
-
-
-
-          </div>
+         </div>
         </div>
       </nav>
-
-
-
-
-      {/* <li><NavLink to="/productdescription" className='active'>Login</NavLink></li> */}
-
-
-
-      <Outlet />
+     <Outlet />
     </>
 
   )

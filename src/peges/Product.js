@@ -6,7 +6,6 @@ import { NavLink } from "react-router-dom";
 const Product = (props) => {
 
     return (
-
         <div>
             <NavLink to="/productdescription" state={{
                 from:

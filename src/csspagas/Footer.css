@@ -1,0 +1,50 @@
+.border-bottom
+{
+    margin-top: 40px;
+}
+.footer-main-div
+{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #00000011;
+    padding-top: 50px;
+}
+.footer-main-navlink
+{
+    list-style: none;
+    padding-top: 30px;    
+}
+
+.footer-Navlink
+{
+    text-decoration: none;
+    color: #000000;
+    font-family: Poppins;
+}
+
+.footer-input
+{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.527);
+    
+}
+.subscribe-button
+{
+    border: #000000;
+    background-color: white;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+     border-bottom: 2px solid #000000;
+     margin-left: 20px;   
+}
+.subscribe-button:hover
+{
+    background-color: red;
+    border: 1px solid black;
+}
+

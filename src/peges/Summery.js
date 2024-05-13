@@ -8,7 +8,7 @@ const Summery = () => {
 
   return (
     <div>
-    <div className='summery'><h1>Summery</h1></div>
+    <div className='summery'><h1>Summary</h1></div>
     <div className='line'></div>
 
     <div className='main-display'>
@@ -57,7 +57,7 @@ const Summery = () => {
          </div>
 
          <div className='case-payment'>
-          <h5>Case on Delivery</h5>
+          <h5>{location.state.from.delivery}</h5>
          </div>
 
 

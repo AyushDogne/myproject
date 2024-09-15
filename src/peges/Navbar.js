@@ -1,14 +1,11 @@
 
-import "./Navbar.css";
+import "../csspagas/Navbar.css";
 import { Outlet, NavLink,Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { editUser } from '../Redux/Slice'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { FaHome, FaUser, FaShoppingCart, FaSignInAlt, FaUserPlus, FaBars } from 'react-icons/fa';
-
-
-
 
 // navbar----------------------------------------------------------------
 
@@ -92,11 +89,10 @@ const Navbar = () => {
 
 <nav className="navbar">
 
+        <h2 className="glow-mart-heading">𝔾𝕝𝕠𝕨-𝕄𝕒𝕣𝕥</h2>
       <div className="navbar-logo">
-        <h2 className="𝔾𝕝𝕠𝕨-𝕄𝕒𝕣𝕥">𝔾𝕝𝕠𝕨 𝕄𝕒𝕣𝕥</h2>
     
-      </div>
-      <div className={`navbar-links ${isMobile ? 'navbar-links-mobile' : ''}`}>
+      </div>      <div className={`navbar-links ${isMobile ? 'navbar-links-mobile' : ''}`}>
         <NavLink to="/"  exact className="nav-link">
           Home
         </NavLink>

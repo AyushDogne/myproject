@@ -106,6 +106,10 @@
     padding-left: 10px;
 }
 
+.categories-container
+{
+  background-color: darkolivegreen;
+}
 .categories-heading
 {
   height: 60px;

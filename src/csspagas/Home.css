@@ -1,7 +1,7 @@
 .washing-cart-1 {
   box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
   border: solid 0.1px rgba(0, 0, 0, 0.151);
-  border-radius: 70px 0px 70px 0px;
+  border-radius: 10px;
   height: 400px;
   width: 250px;
   transition: transform 0.3s ease-in-out;
@@ -112,8 +112,8 @@
 }
 .categories-heading
 {
-  height: 60px;
-  width: 60px;
+  height:70px;
+  width: 70px;
   cursor: pointer;
   background-color: #2ecc71;
 }

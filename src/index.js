@@ -16,17 +16,18 @@ import Payment from './peges/Payment';
 import Summery from './peges/Summery';
 import { Provider } from 'react-redux';
 import { Store } from './Redux/Store';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   <Provider store={Store}>
         <Routes>
             <Route path="/" element={<Navbar />}>
-                <Route index element={<Home />} />
+                <Route path='/' element={<Home />} />
                 <Route path='Login' element={<Login/>} />
                 <Route path='Signup' element={<Signup />} />
                 <Route path='Categories' element={<Categories />} />

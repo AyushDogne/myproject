@@ -324,23 +324,93 @@ const initialState =
                 image: 'fen/fen-8.jpeg',
                 delivery: "Free delivery",
                 price: "2500"
-            },
-        ]
+            }
+        ],
+    userProfile:  
+            [
+                {
+                name: "ayush",
+                number: "765543",
+                email: "ayush@123",
+                password: "12345",
+                gender: "male",
+                city: "khandwa",
+                pinCode: "45001",
+                state: "mp",
+                address: "baman goam aakhai"
+                }   
+            ]
 }
-
 
 export const Slice = createSlice(
     {
-        name: "aacotton",
+        name: "glow-mart",
         initialState: initialState,
         reducers:
         {
-            addCustomer: (state, action) => 
+            addUser: (state, action) => 
             {
-                console.log("hii");
+                // console.log("state.name",state.name);
+                // console.log(action.payload);         
+                const users =
+                {
+                    
+                    name: action.payload.name,
+                    number: action.payload.number, 
+                    email: action.payload.email,
+                    password: action.payload.password, 
+                    gender: action.payload.gender,
+                    city: action.payload.city,
+                    pinCode: action.payload.pinCode, 
+                    state: action.payload.state,
+                    address: action.payload.address, 
+                }        
+                state.userProfile.push(users)
             },
+
+            login:(state,action)=>
+                {
+                    state.userProfile.map((data)=>
+                       {
+                          
+                                if(data.email!==action.payload.email)
+                                {
+                                    alert("Email id is worg pleace enter currect email id !")
+                                }
+                                else if(data.password!==action.payload.password)
+                                {
+                                    alert("password is worg pleace enter currect password !")
+                                }
+                                else
+                                {
+                                    alert("Login Successfuly")                                   
+                                }
+                       })
+                },
+
+                editUser:(state,action)=>
+                    {
+                        console.log("action.payload",action.payload);
+                        state.userProfile.map((data)=>
+                        {
+                            if(data.name===action.payload.name)
+                                {
+                                    data.id=action.payload.id
+                                    data.name=action.payload.name
+                                    data.number=action.payload.number
+                                    data.email=action.payload.email
+                                    data.city=action.payload.city
+                                    data.gender=action.payload.gender
+                                    data.state=action.payload.state
+                                    data.address=action.payload.address
+                                    data.password=action.payload.password
+                                }
+                                return data
+                        })
+                       
+                    }
         }
     })
 
-// export const { addCustomer } = AacottonSlice.actions
+export const { addUser,login,editUser} = Slice.actions
 export default Slice.reducer;

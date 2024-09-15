@@ -1,64 +1,96 @@
-
-
- .img-11
-{
-
-    height: 140px;
-    width: 180px;
-    align-items: center; 
-    margin-left:20px; 
-    background-size: cover;
-    margin-top: 10px;
-    object-fit: contain;
+.washing-cart-1 {
+  box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
+  border: solid 0.1px rgba(0, 0, 0, 0.151);
+  border-radius: 70px 0px 70px 0px;
+  height: 400px;
+  width: 250px;
+  transition: transform 0.3s ease-in-out;
+  margin-top:50px;
 }
-  
-.slaider-1{
 
-    margin-top: 50px;
-    margin-left: 130px;
-    height: 420px;
-    width: 1100px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: rgb(1, 1, 1) 0px 6px 8px;
+.washing-cart-1:hover {
 
+  transform: scale(1.15); /* Enlarge the button slightly on hover */
+  box-shadow: 0 4px 10px rgba(43, 41, 41, 0.849); 
+  transform: scale(1.09);
+  border: 1px solid rgba(43, 39, 42, 0.767);
+}
 
+/* Main Container for the Grid */
+.div-n-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Image Styling */
+.img-11 {
+  height: 130px;
+  width: 90%;
+  object-fit: contain;
+  background-size: cover;
+  padding-top: 10px;
+}
+
+/* Responsive Design with Media Queries */
+@media (max-width: 1200px) {
+  .div-n-1 {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   }
-
-
-.div-n-1
-{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns:200px 200px 250px 250px;
-    row-gap: 50px;
-    column-gap: 1px;
+  .washing-cart-1 {
+      height: 350px;
+      width: 220px;
+  }
 }
 
-.washing-cart-1{
-    
-    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
-    border: solid 0.1px rgba(0, 0, 0, 0.151);
-    border-radius: 70px 0px 70px 0px;
-    height: 400px;
-    width: 250px;   
-
-      
-}
-.washing-cart-1:hover
-{
-    background-color: rgba(189, 189, 189, 0.74);
-    box-shadow: rgba(0, 0, 0, 0.514) 0px 2px 4px;
-    transition: transform .3s;
-    transform: scale(1.09);
-    border: 1px solid rgba(255, 0, 234, 0.644);
-
+@media (max-width: 768px) {
+  .div-n-1 {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .washing-cart-1 {
+      height: 300px;
+      width: 180px;
+  }
 }
 
+@media (max-width: 480px) {
+  .div-n-1 {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .washing-cart-1 {
+      height: 250px;
+      width: 150px;
+  }
+}
+.card-text {
+  font-size: 1rem; /* Yeh base font size hai */
+  text-align: center; /* Text ko center align karega */
+  padding: 10px; /* Text ke aaspaas space dena */
+  margin: 0 auto; /* Center align card ke andar */
+  width: 90%; /* Card ke andar responsive width */
+}
 
+
+@media (max-width:900px) {
+ .washing-cart-1
+ {
+  height: auto;
+ }
+}
+
+
+@media (max-width: 768px) {
+  .card-text {
+      font-size: 0.9rem; /* Chhoti screens ke liye font size thoda chhota */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-text {
+      font-size: 0.8rem; /* Mobile screens ke liye aur chhota font size */
+  }
+}
 
 /* ---------------------------------------------------------------------------------------------------------------- */
 
@@ -74,137 +106,71 @@
     padding-left: 10px;
 }
 
-/* .washing-img-1
+.categories-heading
 {
-    background-image: url(/src/washing/washing10.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100px;
-    width: 100px;
-    margin-left: 80px;
-    margin-top: 10px;
-} */
-
-
-/* ===============================CATEGORIES CSS=========================== */
-
-.button-main-div
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  background-color: #2ecc71;
+}
+.categories-all
 {
-    display: flex;
-    margin-top: 50px;
-    justify-content: space-evenly;
-
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #2ecc71;
+  border-radius: 50%;
 }
 
-.heading-categories
+.categories-all:hover
 {
-
-height: 100px;
-width: 100px;
-background-color: rgb(0, 0, 0);
-border-radius: 50%;
-border: 5px solid rgb(174, 0, 255);
-color:rgb(174, 0, 255);
-font-size:50px;
+  transform: scale(1.15); 
+  box-shadow: 0 4px 10px rgba(236, 0, 0, 0.952);
 }
 
-.all-catagories
-{
-height: 80px;
-width: 80px;
-background-color: rgb(0, 0, 0);
-border-radius: 50%;
-border: 5px solid rgb(174, 0, 255);
-color:rgb(174, 0, 255);
-font-size:30px;
-margin-top: 10px;
 
-}
-.button-text:hover
-{
-    border: 3px solid red;
-    background-color:rgb(0, 0, 0);
-    transform: scale(1.20);
+.categories-container {
+  display: flex; /* Align buttons in a row */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Vertically center buttons */
+  gap: 50px; /* Space between buttons */
+  flex-wrap: wrap; /* Allows buttons to wrap on smaller screens */
+  padding: 20px;
 }
 
-.button-image-w
-{
-    background-image: url("../washing/washing7.jpeg");
-    height: 80px;
-    width: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-.button-image-s
-{
-    background-image: url("../Speakers/speaker1.jpg");
-    height: 80px;
-    width: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-top: 10px;
-}
-.button-image-h
-{
-    background-image: url("../headphone/h-5.jpeg");
-    height: 80px;
-    width: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-top: 10px;
+/* Common button styles */
+.button-image {
+  width: 100px; /* Initial width of the button */
+  height: 100px; /* Equal height to make it circular */
+  border: none;
+  border-radius: 50%; /* Make buttons circular */
+  cursor: pointer;
+  background-color: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the image stays within the circle */
+  transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
-.button-image-l
-{
-    background-image: url("../Lcd/lcd-4.jpeg");
-    height: 80px;
-    width: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-top: 10px;
+.button-image img {
+  width: 100%; /* Make the image fill the button */
+  height: 100%;
+  object-fit: cover; /* Ensures the image is not distorted */
+  border-radius: 50%; /* Ensures the image is circular */
 }
 
-.button-image-c
-{
-    background-image: url("../Cooler/cooler-2.jpeg");
-    height: 80px;
-    width: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-top: 10px;
+/* Hover effect */
+.button-image:hover {
+  transform: scale(1.15); /* Enlarge the button slightly on hover */
+  box-shadow: 0 4px 10px rgba(236, 0, 0, 0.952);
 }
 
-.button-image-f
-{
-    background-image: url("../fen/fen-10.jpeg");
-    height: 80px;
-    width: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-top: 10px;
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .button-image {
+    width: 80px; /* Smaller buttons on small screens */
+    height: 80px; /* Keep the circular shape */
+  }
 }
 
-.button-image-p
-{
-    background-image: url("../Press/press-6.jpeg");
-    height: 80px;
-    width: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-top: 10px;
-}

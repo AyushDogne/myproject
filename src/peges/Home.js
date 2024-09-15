@@ -5,6 +5,15 @@ import { useState } from "react"
 import { NavLink } from "react-router-dom"
 import Footer from "./Footer"
 import Search from './Search'
+import cooler from "../Categories_images/cooler-2.jpeg"
+import fen from "../Categories_images/fen-10.jpeg"
+import headPhone from "../Categories_images/h-1.jpg"
+import Lcd from "../Categories_images/lcd-5.jpeg"
+import press from "../Categories_images/press-10.jpeg"
+import speaker from "../Categories_images/speaker4.jpeg"
+import washing from "../Categories_images/washing3.jpeg"
+
+
 import {useSelector} from 'react-redux'
 
 
@@ -53,19 +62,57 @@ const Home = () =>
 
   return (
     <div>
-      <Slaider />
-
+    <Slaider/>
       <div className="button-main-div">
 
-        <div><button  className="heading-categories">C</button></div>
-        <div> <button className="all-catagories button-text" onClick={() => filterAll("All")}>All</button></div>
-        <div> <button className="button-image-w button-text" onClick={() => filterWashing("washing")}></button></div>
-        <div> <button className="button-image-s button-text" onClick={() => filterSpeaker("speaker")}></button> </div>
-        <div> <button className="button-image-h button-text" onClick={() => filterheadPhone("headphone")}></button> </div>
-        <div> <button className="button-image-l button-text" onClick={() => filterlcd("lcd")}></button> </div>
-        <div> <button className="button-image-c button-text" onClick={() => filtercooler("cooler")}></button> </div>
-        <div> <button className="button-image-f button-text" onClick={() => filterfen("fen")}></button> </div>
-        <div> <button className="button-image-p button-text" onClick={() => filterpress("press")}></button> </div>
+        <div className="categories-container">
+  <div><button className="categories-heading">C</button></div>
+  <div><button className="categories-all" onClick={() => filterAll("All")}>All</button></div>
+  
+  <div> 
+    <button className="button-image button-text" onClick={() => filterWashing("washing")}>
+      <img src={washing}/>
+    </button>
+  </div>
+
+  <div> 
+    <button className="button-image button-text" onClick={() => filterSpeaker("speaker")}>
+      <img src={speaker} alt="Speaker" />
+    </button>
+  </div>
+
+  <div> 
+    <button className="button-image button-text" onClick={() => filterheadPhone("headphone")}>
+      <img src={headPhone} alt="Headphone" />
+    </button>
+  </div>
+
+  <div> 
+    <button className="button-image button-text" onClick={() => filterlcd("lcd")}>
+      <img src={Lcd} />
+      
+    </button>
+  </div>
+
+  <div> 
+    <button className="button-image button-text" onClick={() => filtercooler("cooler")}>
+      <img src={cooler} alt="Cooler" />
+    </button>
+  </div>
+
+  <div> 
+    <button className="button-image button-text" onClick={() => filterfen("fen")}>
+      <img src={fen} alt="Fan" />
+      
+    </button>
+  </div>
+
+  <div> 
+    <button className="button-image button-text" onClick={() => filterpress("press")}>
+      <img src={press} alt="Press" />
+    </button>
+  </div>
+</div>
 
       </div>
       <div className=' div-n-1'>

@@ -1,36 +1,56 @@
-import React, { useState } from 'react'
+import React, { useState ,useRef} from 'react'
 import "../csspagas/Signup.css"
+import { useDispatch } from 'react-redux'
+import {addUser} from '../Redux/Slice'
+import { NavLink } from 'react-bootstrap'
+
+
 const Signup = () =>
 {
    
-  let [userData,setUserData]=useState
-  (
-    {
-      userName:"",
-      userNumber:'',
-      userEmail:"",
-      userPassWord:"",
-      userGender:"",
-      userCity:"",
-      userPinCode:"",
-      userState:"",
-      userLocation:"",
-    }
-  )
+  const dispatch = useDispatch()
 
-  let handleInput=(event)=>
-  {
-    const {name,value} = event.target
-    setUserData({...userData,[name]:value});
-    setUserData({})
-  }
+  const name_ref = useRef()
+  const number = useRef()
+  const email = useRef()
+  const password = useRef()
+  const gender = useRef()
+  const city = useRef()
+  const pinCode = useRef()
+  const state = useRef()
+  const location = useRef()
 
   let handleSubmit=(e)=>
   {
     e.preventDefault();
+    dispatch(addUser(
+    {
+      name:name_ref.current.value,
+      number:number.current.value,
+      email:email.current.value,
+      password:password.current.value,
+      gender:gender.current.value,
+      city:city.current.value,
+      pinCode:pinCode.current.value,
+      state:state.current.value,
+      location:location.current.value,      
+    }
+  ))
+      name:name_ref.current.value=""
+      number:number.current.value=""
+      email:email.current.value=""
+      password:password.current.value=""
+      gender:gender.current.value=""
+      city:city.current.value=""
+      pinCode:pinCode.current.value=""
+      state:state.current.value=""
+      location:location.current.value=""
   }
 
-
+  let handlepopup=()=>
+    {
+      alert("Signup successuly")
+    }
   return (
     <div className='container-fluide'>
 
@@ -42,7 +62,7 @@ const Signup = () =>
 
             <div className='input'>
 
-              <form  onSubmit={(data)=>handleSubmit(data)}>
+              <form  onSubmit={handleSubmit}>
 
               <div style={{display:"flex", justifyContent:"space-around"}}>
                 <div> <i class="bi bi-person-circle" style={{ paddingRight: "5px" }}>
@@ -51,7 +71,7 @@ const Signup = () =>
                     <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
                   </svg>
                 </i>
-                  <input type="text" placeholder='Enetr user name' className='inputs' name='userName' value={userData.userName}  onChange={handleInput}/></div><br />
+                  <input type="text" placeholder='Enetr user name' className='inputs' name='userName' ref={name_ref}/></div><br />
 
                 <div> <i class="bi bi-person-lines-fill" style={{ paddingRight: "5px", color: "white" }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
@@ -59,7 +79,7 @@ const Signup = () =>
                   </svg>
                 </i>
 
-                  <input type="number" placeholder='Enetr user number' className='inputs' name='userNumber' value={userData.userNumber}  onChange={handleInput} /></div></div><br/>
+                  <input type="number" placeholder='Enetr user number' className='inputs' name='userNumber'ref={number} /></div></div><br/>
 
                   <div style={{display:"flex", justifyContent:"space-around"}}>
 
@@ -69,14 +89,14 @@ const Signup = () =>
                     <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z" />
                   </svg>
                 </i>
-                  <input type="email" placeholder='Enetr user e-mail' className='inputs' name='userEmail' value={userData.userEmail}  onChange={handleInput} /></div><br />
+                  <input type="email" placeholder='Enetr user e-mail' className='inputs' name='userEmail' ref={email}/></div><br />
 
                 <div> <i class="bi bi-lock-fill" style={{ paddingRight: "5px", color: "white" }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
                     <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2" />
                   </svg>
                 </i>
-                  <input type="password" placeholder='Enetr user password' className='inputs' name='userPassWord' value={userData.userPassWord}  onChange={handleInput}/></div> </div><br />
+                  <input type="password" placeholder='Enetr user password' className='inputs' name='userPassWord' ref={password}/></div> </div><br />
                 
                   <div style={{display:"flex", justifyContent:"space-around"}}>
                 <div><i class="bi bi-gender-female" style={{ paddingRight: "5px", color: "white" }}>
@@ -84,13 +104,13 @@ const Signup = () =>
                     <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5" />
                   </svg>
                 </i>
-                  <input type="text" placeholder='Enetr user Gender' className='inputs' name='userGender' value={userData.userGender} onChange={handleInput}/></div><br />
+                  <input type="text" placeholder='Enetr user Gender' className='inputs' name='userGender' ref={gender}/></div><br />
                 <div><i class="bi bi-buildings-fill" style={{ paddingRight: "5px", color: "white" }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-buildings-fill" viewBox="0 0 16 16">
                     <path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z" />
                   </svg>
                 </i>
-                  <input type="text" placeholder='Enetr user city' className='inputs' name='userCity' value={userData.userCity} onChange={handleInput} /></div> </div><br />
+                  <input type="text" placeholder='Enetr user city' className='inputs' name='userCity' ref={city} /></div> </div><br />
 
                   <div style={{display:"flex", justifyContent:"space-around"}}>
                 <div><i class="bi bi-file-earmark-code-fill" style={{ paddingRight: "5px", color: "white" }}>
@@ -98,22 +118,21 @@ const Signup = () =>
                     <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
                   </svg>
                 </i>
-                  <input type="text" placeholder='Enetr user pine code' className='inputs' name='userPinCode' value={userData.userPinCode}  onChange={handleInput} /></div><br />
+                  <input type="text" placeholder='Enetr user pine code' className='inputs' name='userPinCode' ref={pinCode} /></div><br />
                 <div><i class="bi bi-device-ssd-fill" style={{ paddingRight: "5px", color: "white" }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-device-ssd-fill" viewBox="0 0 16 16">
                     <path d="M5 8V4h6v4z" />
                     <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m9 0a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M3.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m9.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0M4.75 3h6.5a.75.75 0 0 1 .75.75v4.5a.75.75 0 0 1-.75.75h-6.5A.75.75 0 0 1 4 8.25v-4.5A.75.75 0 0 1 4.75 3M5 12h6a1 1 0 0 1 1 1v2h-1v-2h-.75v2h-1v-2H8.5v2h-1v-2h-.75v2h-1v-2H5v2H4v-2a1 1 0 0 1 1-1" />
                   </svg>
                 </i>
-                  <input type="text" placeholder='Enetr user state' className='inputs' name='userState' value={userData.userState} onChange={handleInput}/></div> </div><br />
+                  <input type="text" placeholder='Enetr user state' className='inputs' name='userState' ref={state}/></div> </div><br />
                 <div><i class="bi bi-geo-alt-fill" style={{ paddingRight: "5px", color: "white" }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                   </svg>
                 </i>
-                  <input type="text" placeholder='Enetr user location' className='inputs' style={{marginRight:"260px"}} name='userLocation' value={userData.userLocation}  onChange={handleInput}/></div><br />
-
-                <div> <button className='inputs' required class="btn btn-outline-primary">Sign up</button></div><br />
+                  <input type="text" placeholder='Enetr user location' className='inputs' style={{marginRight:"260px"}} name='userLocation' ref={location}/></div><br />
+                 <div><button  className='inputs' required class="btn btn-outline-primary" onClick={()=>handlepopup()}>Sign up</button></div><br />
               </form>
             </div>
 
@@ -121,7 +140,6 @@ const Signup = () =>
         </div>
 
       </div>
-
     </div>
   )
 }

@@ -66,9 +66,12 @@
     }
   }
 
+  
+
 
 
 .navbar {
+    position:fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,12 +100,12 @@
   
   .nav-link:hover {
     color: yellow;
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1); 
   }
   
   .active-link {
-    font-size: 1.2rem; /* Increase font size for active link */
-    color: yellow;  /* You can also change the color if needed */
+    font-size: 1.2rem; 
+    color: yellow;  
   }
   
   .navbar-search {
@@ -130,7 +133,7 @@
     background-color: #777;
   }
   
-  /* Mobile Menu Icon */
+  
   .mobile-menu-icon {
     display: none;
     background-color: transparent;
@@ -140,7 +143,7 @@
     cursor: pointer;
   }
   
-  /* Mobile Responsive Design */
+ 
   @media (max-width: 768px) {
     .navbar-links {
       display: none;

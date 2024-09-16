@@ -1,6 +1,6 @@
 .slider-main-div
 {
-  background-color: #555;
+  background-color: #251e1ed8;
 }
 .slider-container {
     position: relative;
@@ -25,7 +25,7 @@
   width: 80px;
   height:80px;
   border-radius: 50%; /* Circular images */
-  margin-left:30px; /* Space between images */
+  margin-left:30px; 
 }
 
 .heading-glow-mart-1
@@ -72,7 +72,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.863);
     padding: 10px 2%;
     color: white;
   }

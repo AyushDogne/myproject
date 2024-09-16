@@ -16,7 +16,6 @@
     border: 2px solid rgb(212, 201, 201);
     width: 150%;
     max-width:350px;
-    height: auto;
     background-color: rgba(34, 34, 29, 0.7); /* Increased opacity for better readability */
     border-radius: 20px;
   }
@@ -26,12 +25,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom:10px;
   }
   
   .inputs {
     width: 80%;
-    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
@@ -87,8 +85,7 @@
   /* Media Queries for responsiveness */
   @media (max-width: 768px) {
     .inin {
-      width: 90%;
-      padding: 20px;
+      width: 100%;
     }
   
     .inputs {
@@ -96,14 +93,13 @@
     }
   
     .login-button {
-      width: 100%;
+      width:50%;
     }
   }
   
   @media (max-width: 480px) {
     .inin {
       width: 100%;
-      padding: 15px;
     }
   
     h1 {
@@ -111,12 +107,11 @@
     }
   
     .inputs {
-      padding: 8px;
       font-size: 14px;
     }
   
     .login-button {
-      padding: 8px;
+      padding:5px;
       font-size: 14px;
     }
   }

@@ -16,7 +16,7 @@ const Footer = () => {
           <p>Links</p>
           <div className='footer-main-navlink'>
             <li><NavLink to="/" exact className='footer-Navlink'>Home</NavLink></li><br/>
-            <li><NavLink to="/Shop" className='footer-Navlink'>Sign up</NavLink></li><br/>
+            <li><NavLink to="/Signup" className='footer-Navlink'>Sign up</NavLink></li><br/>
             <li><NavLink to="/About" className='footer-Navlink'>Login</NavLink></li><br/>
             <li><NavLink to="/Contect" className='footer-Navlink'>Contect</NavLink></li>
           </div>

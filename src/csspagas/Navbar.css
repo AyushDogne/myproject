@@ -21,16 +21,12 @@
   width: 100px;
 }
 
-
-
 .marquee-images img {
   width: 80px;
   height:80px;
   border-radius: 50%; /* Circular images */
   margin-left:30px; /* Space between images */
 }
-
-
 
 .heading-glow-mart-1
 {

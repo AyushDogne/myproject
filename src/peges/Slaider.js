@@ -81,7 +81,7 @@ const Slaider = () => {
   return (
     <>
       <div className='slider-main-div'>
-        <marquee>
+        <marquee className="marquee-main-tag">
           <div className='marquee-images'>
             <img src={cooler1} alt="" />
             <img src={fen1} alt="" />

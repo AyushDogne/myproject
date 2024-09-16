@@ -1,22 +1,123 @@
-.img
-{
+
+.img {
     background-image: url("/src/images/img5.jpg");
-    height:700px;
+    height: 100vh; /* Adjusts height for responsiveness */
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.inin
-{
-    
-     text-align: center;
-     border: 2px solid rgb(212, 201, 201);
-     width: 400px;
-     height: 400px;
-     padding-top: 30px;
-     background-color: rgba(34, 34, 29, 0.527);
-     border-radius: 20px 20px 20px 20px ;
-    
-         
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Form container */
+  .inin {
+    text-align: center;
+    border: 2px solid rgb(212, 201, 201);
+    width: 150%;
+    max-width:350px;
+    height: auto;
+    background-color: rgba(34, 34, 29, 0.7); /* Increased opacity for better readability */
+    border-radius: 20px;
+  }
+  
+  /* Input boxes */
+  .inpusbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .inputs {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .inputs:focus {
+    border-color: #007bff;
+  }
+  
+  /* Forget password link */
+  .forget a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forget a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button */
+  .login-button{
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  /* Register link */
+  .ragistar p {
+    color: white;
+  }
+  
+  .ragistar p a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .ragistar p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .inin {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .inputs {
+      width: 100%;
+    }
+  
+    .login-button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .inin {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .inputs {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .login-button {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  

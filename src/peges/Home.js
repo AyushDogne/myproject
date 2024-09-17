@@ -3,7 +3,6 @@ import Slaider from './Slaider'
 import Product from './Product'
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
-import Footer from "./Footer"
 import Search from './Search'
 import cooler from "../Categories_images/cooler-2.jpeg"
 import fen from "../Categories_images/fen-10.jpeg"
@@ -240,7 +239,6 @@ const Home = () =>
           })
         }
       </div>
-      <Footer/>
     </div>
   )
 }

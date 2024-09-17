@@ -3,6 +3,7 @@ import "../csspagas/Navbar.css";
 import { Outlet, NavLink,Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { editUser } from '../Redux/Slice'
+import Footer from "./Footer"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { FaHome, FaUser, FaShoppingCart, FaSignInAlt, FaUserPlus, FaBars } from 'react-icons/fa';
@@ -118,6 +119,7 @@ const Navbar = () => {
       </button>
     </nav>
       <Outlet />
+      <Footer/>
     </div>
 
   )

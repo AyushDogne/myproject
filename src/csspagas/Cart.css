@@ -106,18 +106,23 @@
   /* Button section */
   .button-color {
     border-radius: 5px;
+    width: 80%;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
     background-color: transparent;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-left: 150px;
+    margin-left: 30px;
   }
   
  
   
-  .btn-outline-success:hover {
-    background-color: #e9ecf0;
-    color: rgb(0, 0, 0);
+  .button-color:hover {
+    background-color: #007bff;
+    color: white;
   }
   
   /* Responsive design */
@@ -145,6 +150,7 @@
     .display-flex-to {
       flex-direction: column;
     }
+
   
     .cart-cart, .cart-2 {
       margin-bottom: 20px;
@@ -155,8 +161,5 @@
     .cart-image img {
       width:100%;
     }
-    .button-color 
-    {
-        margin-right:500px;
-    }
+    
   }

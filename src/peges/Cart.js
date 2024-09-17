@@ -70,8 +70,8 @@ const Cart = () => {
               delivery: location.state.from.delivery
             },
           }}>
-          <div className='button-color'> 
-            <button className='btn btn-outline-success'>Continue</button>
+          <div> 
+            <button className='button-color'>Continue</button>
           </div></NavLink>
         </div>
       </div>

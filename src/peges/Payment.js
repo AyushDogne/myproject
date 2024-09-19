@@ -1,38 +1,42 @@
 import React from 'react'
 import "../csspagas/Payment.css"
 import { NavLink ,useLocation} from 'react-router-dom'
+import phonepay from '../Speakers/phone-pay.png'
+import googlepay from '../Speakers/google.png'
+import Paytym from '../Speakers/paytym.png'
+
 
 const Payment = () => {
    let location = useLocation();
   return (
-    <div>
+    <div className='main-div-payment'>
       <div className='select-p-f-s'><h2>Select Payment for send</h2></div>
 
       <div className='main-cart'>
 
         <div className='payment-cart'>
 
-          <NavLink rel="stylesheet" to="https://www.phonepe.com">
+          <NavLink rel="stylesheet" className="nav-link-handle" to="https://www.phonepe.com">
 
             <div className='phonepe-img-text'>
-              <div className='phonepay-image'></div>
+            <img src={phonepay}  className="phonepay"alt="" />
               <div className='phonepe-text'><h5>Phonepe</h5></div>
 
             </div>
           </NavLink>
 
-          <NavLink rel="stylesheet" to="https://pay.google.com/about">
+          <NavLink rel="stylesheet" className="nav-link-handle" to="https://pay.google.com/about">
 
             <div className='phonepe-img-text'>
-              <div className='google-image'></div>
+            <img src={googlepay}  className="googlepay"alt="" />
               <div className='phonepe-text'><h5>Google pay</h5></div>
             </div>
           </NavLink>
 
-          <NavLink rel="stylesheet" to="https://paytm.com">
+          <NavLink rel="stylesheet" className="nav-link-handle" to="https://paytm.com">
 
             <div className='phonepe-img-text'>
-              <div className='paytym-image'></div>
+            <img src={Paytym}  className="paytym"alt="" />
               <div className='phonepe-text'><h5>Paytym</h5></div>
             </div>
           </NavLink>
@@ -41,7 +45,7 @@ const Payment = () => {
 
           <div className='Case-on-d'>
             <div><form action="">
-              <input type="checkbox" />
+              <input type="checkbox"  className='check-box'/>
             </form>
             </div>
             <div>
@@ -96,7 +100,7 @@ const Payment = () => {
             },
           }}
         
-        > <button className='btn btn-outline-success'>Add payment</button>
+        > <button className='payment-button'>Add payment</button>
         </NavLink></div>
          </div>
 
@@ -112,3 +116,5 @@ const Payment = () => {
 }
 
 export default Payment
+
+

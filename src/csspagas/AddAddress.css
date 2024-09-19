@@ -1,0 +1,73 @@
+
+.add-address-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.add-address-container {
+    background-color: #000000ef;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(243, 1, 191, 0.938);
+    max-width: 400px;
+    width: 100%;
+}
+
+.add-address-title {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-address-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-address-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.add-address-form input::placeholder {
+    color: #b0b0b0;
+}
+
+.submit-btn {
+    padding: 7px;
+    border: none;
+    background-color: #564caf;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #a0118d;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .add-address-container {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .add-address-title {
+        font-size: 1.5rem;
+    }
+
+    .submit-btn {
+        font-size: 1em;
+    }
+}

@@ -1,4 +1,4 @@
-
+/* 
 .main-cart
 {
     display: flex;
@@ -155,3 +155,187 @@
     text-align: center;
     padding-top: 50px;
 }
+
+ */
+.main-div-payment
+{
+    background-color:black
+}
+
+ 
+.select-p-f-s {
+    text-align: center;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #000000;
+  }
+  
+  .main-cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(138, 114, 114, 0.849);
+    border-radius: 10px;
+  }
+  
+  /* Payment options styling */
+  .payment-cart {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .payment-cart-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #070606;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+
+  }
+  
+  /* Payment method cards */
+  .phonepe-img-text, .Case-on-d {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+  }
+  .nav-link-handle
+  {
+    text-decoration: none;
+  }
+  .nav-link-handle:hover
+  {
+    color: red;
+  }
+  .Case-on-d
+  {
+    color: rgb(14, 120, 182);
+  }
+  .Case-on-d:hover
+  {
+    color: red;
+  }
+  .phonepay {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+  }
+   
+  .googlepay {
+    width:80px;
+    background-size: cover;
+  }
+   
+  .paytym {
+    width:70px;
+    background-size: cover;
+  }
+  
+  .phonepe-text h5 {
+    margin: 0;
+  }
+  
+  .Case-on-d form {
+    margin: 0;
+  }
+  
+  .Case-on-d h5 {
+    margin: 0;
+  }
+  .check-box
+  {
+    height:30px;
+    width:30px;
+  }
+  
+  /* Price details */
+  .price-detail h3 {
+    margin-bottom: 20px;
+  }
+  
+  .total-p-d, .last-order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .total-p-d svg, .last-order-total svg {
+    margin-right: 5px;
+  }
+  
+  .select-payment-button {
+    text-align: center;
+  }
+  
+  .payment-button {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .payment-button:hover
+  {
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 10px;
+
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .main-cart {
+      flex-direction: column;
+    }
+  
+    .payment-cart, .payment-cart-2 {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .phonepe-img-text, .Case-on-d {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .select-p-f-s {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .phonepay-image, .google-image, .paytym-image {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .select-p-f-s {
+      font-size: 14px;
+    }
+  
+    .price-detail h3 {
+      font-size: 18px;
+    }
+  
+    .button-1 button {
+      font-size: 14px;
+    }
+  }

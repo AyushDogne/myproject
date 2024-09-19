@@ -12,6 +12,8 @@ import Categories from './peges/Categories';
 import Cart from './peges/Cart';
 import Profile from './peges/Profile';
 import Address from './peges/Address';
+import AddAddress from './peges/AddAddress';
+
 import Payment from './peges/Payment';
 import Summery from './peges/Summery';
 import { Provider } from 'react-redux';
@@ -28,15 +30,17 @@ root.render(
         <Routes>
             <Route path="/" element={<Navbar />}>
                 <Route path='/' element={<Home />} />
-                <Route path='Login' element={<Login/>} />
-                <Route path='Signup' element={<Signup />} />
+                <Route path='/Login' element={<Login/>} />
+                <Route path='/Signup' element={<Signup />} />
                 <Route path='Categories' element={<Categories />} />
-                <Route path='Cart' element={<Cart />} />
-                <Route path='Profile' element={<Profile />} />
-                <Route path='Address' element={<Address />} />
+                <Route path='/Cart' element={<Cart />} />
+                <Route path='/Profile' element={<Profile />} />
+                <Route path='/Address' element={<Address />} />
+                <Route path='/AddAddress' element={<AddAddress />} />
+
                 <Route path='/Payment' element={<Payment />} />
                 <Route path='/Summery' element={<Summery/>} />
-                <Route path='Productdescription' element={<Productdiscription />} />
+                <Route path='/Productdescription' element={<Productdiscription />} />
             </Route>
         </Routes>
         </Provider>

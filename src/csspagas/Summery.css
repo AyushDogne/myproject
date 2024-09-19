@@ -1,90 +1,134 @@
-.summery{
+
+.main-summery-div
+{
+    background-color: wheat;
+}
+
+.summery {
     margin-top: 20px;
-    margin-left: 600px;
-    
-}
-.line
-{
-    border-bottom: 1px solid black;
-
-}
-
-
-.case-payment
-{
-    border: 1px solid rgba(0, 0, 0, 0.452);
-    background-color: rgba(0, 0, 0, 0.288);
-    width:700px;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
-
+    color: rgb(0, 0, 0);
 }
 
-.main-display
-{
+.line {
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.case-payment {
+    border: 2px solid rgba(0, 0, 0, 0.452);
+    background-color: rgba(0, 0, 0, 0.288);
+    width: 90%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    margin: 20px auto;
+}
+
+.main-display {
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
+    gap: 20px;
+    box-shadow: rgba(210, 0, 238, 0.925) 0px 2px 4px;
+
 }
 
-.summery-cart-1
-{
-    background-color: rgb(255, 255, 255);
-    height: 170px;
-    width: 700px;
+.summery-cart-1 {
+    background-color: rgba(0, 0, 0, 0.884);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;    color: white;
+    height: auto;
+    width: 90%;
+    max-width: 700px;
     border: 1px solid rgba(0, 0, 0, 0.247);
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
-
+    flex-direction: column;
+    margin: 20px auto;
 }
 
-.summery-title
-{
-   display: flex;
-   justify-content: space-between;
+.summery-title {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
 }
 
-.summery-image
-{
-    padding-top: 0%;
-    height: 170px;
+.summery-image {
+    width: 30%;
+    height: auto;
     object-fit: contain;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-
-.summery-image-border
-{
+.summery-image-border {
     border-right: 2px solid rgba(0, 0, 0, 0.24);
- 
+    padding: 10px;
 }
 
-.summery-bordar-to
-{
+.summery-bordar-to {
     border-bottom: 1px solid rgb(0, 0, 0);
     padding-top: 30px;
 }
 
-.summery-Address-user
-{
-    height: 200px;
-    width: 700px;
-    background-color: rgba(255, 255, 255, 0.849);
-    border: 1px solid rgba(0, 0, 0, 0.116);
-    margin-right: 40px;
+.summery-Address-user {
+    height: auto;
+    width: 90%;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0, 0.87);
+    color:antiquewhite;
+    border: 1px solid rgba(245, 238, 238, 0.918);
+    margin: 20px auto;
     box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
-
+    padding: 20px;
+    border-radius: 10px;
 
 }
 
-.summery-payment
-{
+.summery-payment {
     box-shadow: rgba(0, 0, 0, 0.315) 0px 2px 4px;
-    border-radius: 3px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.856);
+    color:aliceblue;
     border: 1px solid rgba(0, 0, 0, 0.26);
-    width: 400px;
-
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
 }
-.Free-dd
-{
-    margin-top: 15px;
+
+.price-detail {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.total-p-d {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.last-order-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.select-payment-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-display {
+        flex-direction: column;
+    }
+
+    .summery-cart-1,
+    .summery-payment,
+    .summery-Address-user {
+        width: 100%;
+        max-width: none;
+    }
 }

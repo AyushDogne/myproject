@@ -24,26 +24,6 @@ const Navbar = () => {
     setIsMobile(!isMobile);
   };
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-
-  const hendalImageClick = () => {
-
-    inputRef.current.click();
-
-  }
-
-  const hendalImageChange = (event) => {
-    const file = event.target.files[0];
-    // console.log(file);
-    setImage(event.target.files[0]);
-
-  }
-
   let searchHendle = (e) => {
     let searchData = e.target.value
   }
@@ -94,19 +74,19 @@ const Navbar = () => {
       <div className="navbar-logo">
     
       </div>      <div className={`navbar-links ${isMobile ? 'navbar-links-mobile' : ''}`}>
-        <NavLink to="/"  exact className="nav-link">
+        <NavLink to="/" onClick={()=>setIsMobile(false)}  exact className="nav-link">
           Home
         </NavLink>
-        <NavLink to="/Signup" className="nav-link">
+        <NavLink to="/Signup"  onClick={()=>setIsMobile(false)} className="nav-link">
         Sign Up
         </NavLink>
-        <NavLink to="/Login" className="nav-link">
+        <NavLink to="/Login" onClick={()=>setIsMobile(false)}  className="nav-link">
         Login
         </NavLink>
-        <NavLink to="/Profile" className="nav-link">
+        <NavLink to="/Profile" onClick={()=>setIsMobile(false)}  className="nav-link">
           <FaUser />
         </NavLink>
-        <NavLink to="/Cart" className="nav-link">
+        <NavLink to="/Cart" onClick={()=>setIsMobile(false)}  className="nav-link">
           <FaShoppingCart />
         </NavLink>
       </div>

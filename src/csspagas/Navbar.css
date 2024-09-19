@@ -102,7 +102,7 @@
   }
   
   .nav-link:hover {
-    color: yellow;
+    color: rgb(255, 0, 0);
     transform: scale(1.1); 
   }
   
@@ -150,8 +150,11 @@
  
   @media (max-width: 768px) {
     .navbar-links {
-      display: none;
-      
+      display: none;      
+    }
+    .navbar-links:hover
+    {
+      color: red;
     }
  
     .navbar-links.navbar-links-mobile {
@@ -161,12 +164,16 @@
       top: 60px;
       left: 0;
       background-color: black;
-      width:80%;
+      width:30%;
       padding: 20px 0;
+      margin-top: 20%;
+      margin-left:30px;
       gap: 10px;
       z-index: 999;
+      padding-left: 10px;
    
     }
+  
   
     .navbar-search {
       margin-top: 10px;

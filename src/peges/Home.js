@@ -122,9 +122,9 @@ const Home = () =>
             {
               case ("all"):
               {
-                console.log("all case: ", productTemp.category)
                 returnedProduct =  <Product
                 key={productTemp.id}
+                category={productTemp.category}
                 title={productTemp.title}
                 image={productTemp.image}
                 price={productTemp.price}
@@ -138,6 +138,8 @@ const Home = () =>
                 {
                   returnedProduct =   <Product
                   key={productTemp.id}
+                  category={productTemp.category}
+
                   title={productTemp.title}
                   image={productTemp.image}
                   price={productTemp.price}

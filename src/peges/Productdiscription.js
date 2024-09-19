@@ -11,7 +11,6 @@ const Productdiscription = () =>
     <div className='main-div-p-d'>
       <div>
      
-          {/* <div><p className={location.state.from.image}  id="hello"/></div> */}
           <div>
             <img src={require("../"+location.state.from.image)} className='product-image'/>
           </div>
@@ -20,6 +19,7 @@ const Productdiscription = () =>
         <NavLink  to="/Cart" state={{ 
           from: 
             {
+              category: location.state.from.category,
               title : location.state.from.title,
               image : location.state.from.image,
               price : location.state.from.price,
@@ -44,7 +44,7 @@ const Productdiscription = () =>
 
         <div className='price-product'>
 
-          <h5 className='blutooth-text'>Blutooth Speaker</h5>
+          <h5 className='product-heading'>{location.state.from.category} </h5>
           <h4 className='rupee-icon'><svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
             <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
           </svg> <span>{location.state.from.price} </span>

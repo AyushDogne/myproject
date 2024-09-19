@@ -41,11 +41,11 @@
     color: white;
   }
   
-  .blutooth-text {
-    font-size: 1.8rem;
+  .product-heading{
+    font-size: 2.5rem;
     font-weight: bold;
+    margin-left: 40%;
     color: #fff; /* White text for title */
-    text-align: center;
   }
   
   .rupee-icon {
@@ -97,7 +97,10 @@
       align-items: center;
       padding: 10px;
     }
-   
+    .product-heading
+    {
+      margin-right:100px;
+    }
     .btn-outline-success
     {
       width: 70%;
@@ -132,6 +135,10 @@
     .product-image {
       width: 100%;
       height: auto;
+    }
+    .product-heading
+    {
+      margin-left: 20%;
     }
     .btn-outline-success
     {

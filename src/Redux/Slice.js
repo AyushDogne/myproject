@@ -326,7 +326,7 @@ const initialState =
                 price: "2500"
             }
         ],
-    userProfile:  
+    userProfile:
             [
                 {
                 name: "ayush",
@@ -335,11 +335,12 @@ const initialState =
                 password: "12345",
                 gender: "male",
                 city: "khandwa",
-                pinCode: "45001",
+                pincode: "45001",
                 state: "mp",
                 address: "baman goam aakhai"
                 }   
             ]
+        
 }
 
 export const Slice = createSlice(
@@ -350,7 +351,7 @@ export const Slice = createSlice(
         {
             addUser: (state, action) => 
             {
-                // console.log("state.name",state.name);
+                // console.log("state.name",state.userProfile.name);
                 // console.log(action.payload);         
                 const users =
                 {
@@ -369,7 +370,7 @@ export const Slice = createSlice(
             },
 
             login:(state,action)=>
-                {
+                {                    
                     state.userProfile.map((data)=>
                        {
                           
@@ -390,7 +391,6 @@ export const Slice = createSlice(
 
                 editUser:(state,action)=>
                     {
-                        console.log("action.payload",action.payload);
                         state.userProfile.map((data)=>
                         {
                             if(data.name===action.payload.name)

@@ -329,15 +329,15 @@ const initialState =
     userProfile:
             [
                 {
-                name: "ayush",
-                number: "765543",
-                email: "ayush@123",
-                password: "12345",
+                name: "Aayush Dogne",
+                number: "7489048015",
+                email: "ayushdogne2002@gmail.com",
+                password: "***",
                 gender: "male",
                 city: "khandwa",
-                pincode: "45001",
-                state: "mp",
-                address: "baman goam aakhai"
+                pincode: "450001",
+                state: "MP",
+                address: "Indore tower square"
                 }   
             ]
         
